@@ -1,15 +1,17 @@
+* {
+  background-color: #111111;
+}
+
 .container__articles{
   margin-top: 30px;
-
+  padding-bottom: 30px;
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 header {
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  margin-top: 15px;
 }
 

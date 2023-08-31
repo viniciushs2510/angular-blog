@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-small-card',
@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SmallCardComponent implements OnInit {
 
+  marginValue: string = '20px';
+  @Input() hasMargin: boolean = true;
+
   constructor() { }
 
   ngOnInit(): void {
+    if(!this.hasMargin) {
+      this.marginValue = '0px';
+    }
   }
 
 }

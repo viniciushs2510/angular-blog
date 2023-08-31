@@ -1,12 +1,23 @@
+* {
+  background-color: #111111;
+}
+
 .container__small-card {
-  width: 700px;
-  height: 100px;
-  margin-bottom: 15px;
+  width: 100%;
+  height: 125px;
+  display: flex;
+  padding-bottom: 15px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .container__small-card-content {
   display: flex;
   flex-direction: row;
+
+}
+
+.small-card__photo{
+  margin-bottom: 10px;
 }
 
 .small-card__photo img {
@@ -16,7 +27,14 @@
   margin-right: 20px;
 }
 
+.small-card__post-date p{
+  margin-top: 2px;
+  font-size: 11px;
+  opacity: 0.3;
+}
+
 .small-card__title {
+  margin-top: 10px;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -26,10 +44,10 @@
 
 .small-card__title h1 a {
   height: 100%;
-  font-size: 12px;
+  font-size: 18px;
   font-weight: normal;
   display: flex;
-  color: white;
+  opacity: 0.8;
   align-items: center;
 
 }
