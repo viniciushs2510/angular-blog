@@ -10,8 +10,3 @@
   justify-content: flex-start;
 }
 
-header {
-  display: flex;
-  flex-direction: row;
-}
-
