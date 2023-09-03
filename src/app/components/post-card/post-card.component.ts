@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-post-card',
@@ -7,9 +7,23 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PostCardComponent implements OnInit {
 
+  widthValue: string = '290px';
+  paddingLeftValue: string = '20px';
+  borderRightValue: string = '1px solid #e5e5e5';
+
+  @Input() hasPaddingLeft: boolean = true;
+  @Input() hasBorderRight: boolean = true;
+
   constructor() { }
 
   ngOnInit(): void {
+    if(!this.hasPaddingLeft) {
+      this.paddingLeftValue = '0px';
+      this.widthValue = '270px';
+    }
+    if(!this.hasBorderRight) {
+      this.borderRightValue = 'none';
+    }
   }
 
 }
