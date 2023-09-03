@@ -14,6 +14,13 @@ export class PostCardComponent implements OnInit {
   @Input() hasPaddingLeft: boolean = true;
   @Input() hasBorderRight: boolean = true;
 
+  @Input() imgUrl: string = "";
+  @Input() imgAlt: string = "";
+  @Input() date: string = "";
+  @Input() title: string = "";
+  @Input() description: string = "";
+  @Input() link: string = "";
+
   constructor() { }
 
   ngOnInit(): void {

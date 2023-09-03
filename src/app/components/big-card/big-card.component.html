@@ -1,22 +1,20 @@
 <div class="container__big-card">
   <div class="big-card__photo">
-    <img src="https://picsum.photos/600/280" alt="Uma imagem qualquer">
+    <img src="{{imgUrl}}" alt="{{imgAlt}}">
   </div>
 
   <div class="big-card__post-date">
-    <p> 17 Ago 2023 </p>
+    <p>{{date}}</p>
   </div>
 
   <div class="big-card__title">
-    <h1><a href="#"> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></h1>
+    <h1><a href="{{link}}"> {{title}}</a></h1>
   </div>
 
   <div class="big-card__description">
     <p>
-      <a href="#">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. In venenatis eros tellus, fringilla suscipit nisi
-        molestie sit amet.
-        Sed quis sem dictum, ullamcorper nisi placerat, blandit quam.
+      <a href="{{link}}">
+        {{description}}
       </a>
     </p>
   </div>

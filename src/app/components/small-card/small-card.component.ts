@@ -10,6 +10,12 @@ export class SmallCardComponent implements OnInit {
   marginValue: string = '20px';
   @Input() hasMargin: boolean = true;
 
+  @Input() imgUrl: string = "";
+  @Input() imgAlt: string = "";
+  @Input() date: string = "";
+  @Input() title: string = "";
+  @Input() link: string = "";
+
   constructor() { }
 
   ngOnInit(): void {
