@@ -9,7 +9,7 @@ export class HomeComponent implements OnInit {
 
   bigCardImg: string = "https://picsum.photos/600/280";
   bigCardImgAlt: string = "Imagem aleatória";
-  bigCardLink: string = "https://www.google.com.br";
+  bigCardLink: string = "/post/1";
   bigCardDate: string = "17 Ago 2023";
   bigCardTitle: string = "Lorem ipsum dolor sit amet, consectetur adipiscing elit.";
   bigCardDescription: string = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In venenatis eros tellus, fringilla suscipit nisi molestie sit amet. Sed quis sem dictum, ullamcorper nisi placerat, blandit quam.";
