@@ -1,0 +1,16 @@
+
+<app-menu-title></app-menu-title>
+<div class="container__articles">
+  <div class="articles__main">
+    <app-big-card link="{{bigCardLink}}" imgUrl="{{bigCardImg}}" imgAlt="{{bigCardImgAlt}}" date="{{bigCardDate}}"
+      title="{{bigCardTitle}}" description="{{bigCardDescription}}"></app-big-card>
+  </div>
+  <div class="articles__others">
+    <app-small-card [hasMargin]="false" link="{{smallCardLink1}}" imgUrl="{{smallCardImg1}}"
+      imgAlt="{{smallCardImgAlt1}}" date="{{smallCardDate1}}" title="{{smallCardTitle1}}"></app-small-card>
+    <app-small-card link="{{smallCardLink2}}" imgUrl="{{smallCardImg2}}" imgAlt="{{smallCardImgAlt2}}"
+      date="{{smallCardDate2}}" title="{{smallCardTitle2}}"></app-small-card>
+    <app-small-card link="{{smallCardLink3}}" imgUrl="{{smallCardImg3}}" imgAlt="{{smallCardImgAlt3}}"
+      date="{{smallCardDate3}}" title="{{smallCardTitle3}}"></app-small-card>
+  </div>
+</div>

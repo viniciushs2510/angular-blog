@@ -1,21 +1,67 @@
-* {
-  background-color: #ffff;
-
+.container {
+  max-width: 1280px;
+  margin: auto;
+  padding-top: 0;
 }
 
-.container > h1{
-  font-size: 16px;
-  letter-spacing: 1px;
-  font-family: 'Poppins', sans-serif;
-  font-weight: 600;
-  text-transform: uppercase;
-  color: #121212;
-  opacity: 0.3;
-  padding-top: 60px;
-  margin-bottom: 40px;
-}
 
-.container__posts{
+.container__title{
+  background-color: #111111;
+  width: 100%;
+  padding: 40px 60px;
   display: flex;
   flex-direction: row;
+}
+
+.container__title-img{
+  background-color: #111111;
+}
+
+.container__title-content{
+  background-color: #111111;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  padding-left: 30px;
+  justify-content: center;
+}
+
+.container__title-content-title > h1{
+  background-color: #111111;
+  font-size: 35px;
+}
+
+.container__title-content-date {
+  background-color: transparent;
+  margin-top: 15px;
+}
+
+.container__title-content-date > p{
+  background-color: transparent;
+  font-size: 15px;
+  opacity: 0.3;
+}
+
+.container__title-content-description{
+  background-color: transparent;
+  margin-top: 15px;
+}
+
+.container__title-content-description > p{
+  background-color: transparent;
+  font-size: 20px;
+  opacity: 0.8;
+}
+
+.container__details{
+  background-color: #ffff;
+  padding: 40px 60px;
+  padding-top: 25px;
+}
+
+.container__details > p{
+  background-color: transparent;
+  color: #000000;
+  padding-top: 15px;
+  text-indent: 50px;
 }

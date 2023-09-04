@@ -1,16 +1,25 @@
 <div class="container">
-  <h1>ultimas postagens</h1>
-  <div class="container__posts">
-    <app-post-card [hasPaddingLeft]="false" link="{{postCardLink1}}" imgUrl="{{postCardImg1}}"
-      imgAlt="{{postCardImgAlt1}}" date="{{postCardDate1}}" title="{{postCardTitle1}}"
-      description="{{postCardDescription1}}"></app-post-card>
-    <app-post-card link="{{postCardLink2}}" imgUrl="{{postCardImg2}}" imgAlt="{{postCardImgAlt2}}"
-      date="{{postCardDate2}}" title="{{postCardTitle2}}" description="{{postCardDescription2}}"></app-post-card>
-    <app-post-card link="{{postCardLink3}}" imgUrl="{{postCardImg3}}" imgAlt="{{postCardImgAlt3}}"
-      date="{{postCardDate3}}" title="{{postCardTitle3}}" description="{{postCardDescription3}}"></app-post-card>
-    <app-post-card [hasBorderRight]="false" link="{{postCardLink4}}" imgUrl="{{postCardImg4}}"
-      imgAlt="{{postCardImgAlt4}}" date="{{postCardDate4}}" title="{{postCardTitle4}}"
-      description="{{postCardDescription4}}"></app-post-card>
+  <div class="container__title">
+    <div class="container__title-img">
+      <img src="{{imgUrl}}" alt="{{imgAlt}}" />
+    </div>
+    <div class="container__title-content">
+      <div class="container__title-content-title">
+        <h1>{{title}}</h1>
+      </div>
+
+      <div class="container__title-content-date">
+        <p>{{date}}</p>
+      </div>
+
+      <div class="container__title-content-description">
+        <p>{{description}}</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container__details">
+    <p *ngFor="let paragraph of text.split('\n')">{{paragraph}}</p>
   </div>
 
 </div>

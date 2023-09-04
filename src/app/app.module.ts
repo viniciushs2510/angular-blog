@@ -10,6 +10,8 @@ import { SmallCardComponent } from './components/small-card/small-card.component
 import { HomeComponent } from './pages/home/home.component';
 import { PostComponent } from './pages/post/post.component';
 import { PostCardComponent } from './components/post-card/post-card.component';
+import { MainPostsComponent } from './components/main-posts/main-posts.component';
+import { LastPostsComponent } from './components/last-posts/last-posts.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { PostCardComponent } from './components/post-card/post-card.component';
     SmallCardComponent,
     HomeComponent,
     PostComponent,
-    PostCardComponent
+    PostCardComponent,
+    MainPostsComponent,
+    LastPostsComponent
   ],
   imports: [
     BrowserModule,
